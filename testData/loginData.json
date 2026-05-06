@@ -1,0 +1,62 @@
+{
+  "validCredentials": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidCredentials": {
+    "username": "invalid_user",
+    "password": "invalid_password",
+    "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "invalidUsername": {
+    "username": "fake_user",
+    "password": "secret_sauce",
+    "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "invalidPassword": {
+    "username": "standard_user",
+    "password": "wrong_password",
+    "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "emptyCredentials": {
+    "username": "",
+    "password": "",
+    "errorMessage": "Epic sadface: Username is required"  
+  },
+  "emptyUsername": {
+    "username": "",
+    "password": "secret_sauce",
+    "errorMessage": "Epic sadface: Username is required"
+  },
+  "emptyPassword": {
+    "username": "standard_user",
+    "password": "",
+    "errorMessage": "Epic sadface: Password is required"
+  },
+  "specialCharacters": {
+    "username": "<script>alert('xss')</script>",
+    "password": "'; DROP TABLE users; --",
+    "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "problemUser": {
+    "username": "problem_user",
+    "password": "secret_sauce"
+  },
+  "performanceGlitchUser": {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce"
+  },
+  "lockedOutUser": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "errorMessage": "Epic sadface: Sorry, this user has been locked out."
+  },
+  "error_user": {
+    "username": "error_user",
+    "password": "secret_sauce"
+  },
+  "virtualUser": {
+    "username": "virtual_user",
+    "password": "secret_sauce"    
+  }
+}
