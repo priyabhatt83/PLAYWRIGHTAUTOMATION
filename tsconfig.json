@@ -8,11 +8,11 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "types": ["node", "@playwright/test"],
-     "baseUrl": ".",
+    "baseUrl": ".",
     "paths": {
       "@fixtures/*": ["tests/fixtures/*"],
       "@testData/*": ["tests/testData/*"]   
-    }
-  },
-  "include": ["tests/**/*.ts", "playwright.config.ts"]
+    },
+    "allowSyntheticDefaultImports": true
+  }
 }
